@@ -1,0 +1,45 @@
+--------- beginning of /dev/log/system
+I/ActivityManager(  164): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=myself.exerclse.mytestjni/.MainActivity} from pid 362
+--------- beginning of /dev/log/main
+D/ViewRootImpl(  164): pckname = myself.exerclse.mytestjni
+D/dalvikvm( 2573): Late-enabling CheckJNI
+I/ActivityManager(  164): Start proc myself.exerclse.mytestjni for activity myself.exerclse.mytestjni/.MainActivity: pid=2573 uid=10058 gids={}
+D/OpenGLRenderer(  362): Flushing caches (mode 1)
+D/OpenGLRenderer(  362): Flushing caches (mode 0)
+W/dalvikvm( 2573): VFY: unable to find class referenced in signature (Landroid/view/SearchEvent;)
+I/dalvikvm( 2573): Could not find method android.view.Window$Callback.onSearchRequested, referenced from method android.support.v7.view.WindowCallbackWrapper.onSearchRequested
+W/dalvikvm( 2573): VFY: unable to resolve interface method 15140: Landroid/view/Window$Callback;.onSearchRequested (Landroid/view/SearchEvent;)Z
+D/dalvikvm( 2573): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm( 2573): Could not find method android.view.Window$Callback.onWindowStartingActionMode, referenced from method android.support.v7.view.WindowCallbackWrapper.onWindowStartingActionMode
+W/dalvikvm( 2573): VFY: unable to resolve interface method 15144: Landroid/view/Window$Callback;.onWindowStartingActionMode (Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+D/dalvikvm( 2573): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm( 2573): Could not find method android.view.ViewGroup.onWindowSystemUiVisibilityChanged, referenced from method android.support.v7.widget.ActionBarOverlayLayout.onWindowSystemUiVisibilityChanged
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 15043: Landroid/view/ViewGroup;.onWindowSystemUiVisibilityChanged (I)V
+D/dalvikvm( 2573): VFY: replacing opcode 0x6f at 0x0008
+I/dalvikvm( 2573): Could not find method android.view.ViewGroup.onRtlPropertiesChanged, referenced from method android.support.v7.widget.Toolbar.onRtlPropertiesChanged
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 15039: Landroid/view/ViewGroup;.onRtlPropertiesChanged (I)V
+D/dalvikvm( 2573): VFY: replacing opcode 0x6f at 0x0007
+I/dalvikvm( 2573): Could not find method android.content.res.TypedArray.getChangingConfigurations, referenced from method android.support.v7.widget.TintTypedArray.getChangingConfigurations
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 424: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+D/dalvikvm( 2573): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 2573): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.widget.TintTypedArray.getType
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 446: Landroid/content/res/TypedArray;.getType (I)I
+D/dalvikvm( 2573): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 2573): Could not find method android.content.res.Resources.getDrawable, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawable
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 387: Landroid/content/res/Resources;.getDrawable (ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 2573): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 2573): Could not find method android.content.res.Resources.getDrawableForDensity, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawableForDensity
+W/dalvikvm( 2573): VFY: unable to resolve virtual method 389: Landroid/content/res/Resources;.getDrawableForDensity (IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 2573): VFY: replacing opcode 0x6e at 0x0002
+D/ViewRootImpl( 2573): pckname = myself.exerclse.mytestjni
+D/libEGL  ( 2573): loaded /system/lib/egl/libEGL_mali.so
+D/dalvikvm( 2573): GC_CONCURRENT freed 220K, 5% free 6770K/7111K, paused 2ms+26ms
+D/libEGL  ( 2573): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 2573): loaded /system/lib/egl/libGLESv2_mali.so
+D/OpenGLRenderer( 2573): Enabling debug mode 0
+W/InputManagerService(  164): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41500c68 (uid=10025 pid=362)
+I/Process (  164): Sending signal. PID: 2573 SIG: 3
+I/dalvikvm( 2573): threadid=3: reacting to signal 3
+I/dalvikvm( 2573): Wrote stack traces to '/data/anr/traces.txt'
+I/ActivityManager(  164): Displayed myself.exerclse.mytestjni/.MainActivity: +604ms (total +8m7s498ms)
+D/dalvikvm(  164): GC_CONCURRENT freed 907K, 17% free 10404K/12423K, paused 3ms+6ms

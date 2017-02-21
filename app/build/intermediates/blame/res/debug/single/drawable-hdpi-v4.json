@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/ouyang/oyhl/rebotgtkandroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/home/ouyang/oyhl/rebotgtkandroid/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ouyang/oyhl/GTKAndroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/home/ouyang/oyhl/GTKAndroid/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ouyang/oyhl/gtkandroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/home/ouyang/oyhl/gtkandroid/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    }
+]

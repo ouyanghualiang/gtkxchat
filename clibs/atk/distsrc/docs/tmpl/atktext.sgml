@@ -1,0 +1,479 @@
+<!-- ##### SECTION Title ##### -->
+AtkText
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkText ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkText::text-attributes-changed ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+
+<!-- ##### SIGNAL AtkText::text-caret-moved ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AtkText::text-changed ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AtkText::text-insert ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+@arg1: 
+@arg2: 
+@arg3: 
+
+<!-- ##### SIGNAL AtkText::text-remove ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+@arg1: 
+@arg2: 
+@arg3: 
+
+<!-- ##### SIGNAL AtkText::text-selection-changed ##### -->
+<para>
+
+</para>
+
+@atktext: the object which received the signal.
+
+<!-- ##### STRUCT AtkTextIface ##### -->
+<para>
+
+</para>
+
+@parent: 
+@get_text: 
+@get_text_after_offset: 
+@get_text_at_offset: 
+@get_character_at_offset: 
+@get_text_before_offset: 
+@get_caret_offset: 
+@get_run_attributes: 
+@get_default_attributes: 
+@get_character_extents: 
+@get_character_count: 
+@get_offset_at_point: 
+@get_n_selections: 
+@get_selection: 
+@add_selection: 
+@remove_selection: 
+@set_selection: 
+@set_caret_offset: 
+@text_changed: 
+@text_caret_moved: 
+@text_selection_changed: 
+@text_attributes_changed: 
+@get_range_extents: 
+@get_bounded_ranges: 
+@get_string_at_offset: 
+
+<!-- ##### ENUM AtkTextBoundary ##### -->
+<para>
+
+</para>
+
+@ATK_TEXT_BOUNDARY_CHAR: 
+@ATK_TEXT_BOUNDARY_WORD_START: 
+@ATK_TEXT_BOUNDARY_WORD_END: 
+@ATK_TEXT_BOUNDARY_SENTENCE_START: 
+@ATK_TEXT_BOUNDARY_SENTENCE_END: 
+@ATK_TEXT_BOUNDARY_LINE_START: 
+@ATK_TEXT_BOUNDARY_LINE_END: 
+
+<!-- ##### ENUM AtkTextGranularity ##### -->
+<para>
+
+</para>
+
+@ATK_TEXT_GRANULARITY_CHAR: 
+@ATK_TEXT_GRANULARITY_WORD: 
+@ATK_TEXT_GRANULARITY_SENTENCE: 
+@ATK_TEXT_GRANULARITY_LINE: 
+@ATK_TEXT_GRANULARITY_PARAGRAPH: 
+
+<!-- ##### ENUM AtkTextClipType ##### -->
+<para>
+
+</para>
+
+@ATK_TEXT_CLIP_NONE: 
+@ATK_TEXT_CLIP_MIN: 
+@ATK_TEXT_CLIP_MAX: 
+@ATK_TEXT_CLIP_BOTH: 
+
+<!-- ##### STRUCT AtkTextRange ##### -->
+<para>
+
+</para>
+
+@bounds: 
+@start_offset: 
+@end_offset: 
+@content: 
+
+<!-- ##### STRUCT AtkTextRectangle ##### -->
+<para>
+
+</para>
+
+@x: 
+@y: 
+@width: 
+@height: 
+
+<!-- ##### ENUM AtkTextAttribute ##### -->
+<para>
+
+</para>
+
+@ATK_TEXT_ATTR_INVALID: 
+@ATK_TEXT_ATTR_LEFT_MARGIN: 
+@ATK_TEXT_ATTR_RIGHT_MARGIN: 
+@ATK_TEXT_ATTR_INDENT: 
+@ATK_TEXT_ATTR_INVISIBLE: 
+@ATK_TEXT_ATTR_EDITABLE: 
+@ATK_TEXT_ATTR_PIXELS_ABOVE_LINES: 
+@ATK_TEXT_ATTR_PIXELS_BELOW_LINES: 
+@ATK_TEXT_ATTR_PIXELS_INSIDE_WRAP: 
+@ATK_TEXT_ATTR_BG_FULL_HEIGHT: 
+@ATK_TEXT_ATTR_RISE: 
+@ATK_TEXT_ATTR_UNDERLINE: 
+@ATK_TEXT_ATTR_STRIKETHROUGH: 
+@ATK_TEXT_ATTR_SIZE: 
+@ATK_TEXT_ATTR_SCALE: 
+@ATK_TEXT_ATTR_WEIGHT: 
+@ATK_TEXT_ATTR_LANGUAGE: 
+@ATK_TEXT_ATTR_FAMILY_NAME: 
+@ATK_TEXT_ATTR_BG_COLOR: 
+@ATK_TEXT_ATTR_FG_COLOR: 
+@ATK_TEXT_ATTR_BG_STIPPLE: 
+@ATK_TEXT_ATTR_FG_STIPPLE: 
+@ATK_TEXT_ATTR_WRAP_MODE: 
+@ATK_TEXT_ATTR_DIRECTION: 
+@ATK_TEXT_ATTR_JUSTIFICATION: 
+@ATK_TEXT_ATTR_STRETCH: 
+@ATK_TEXT_ATTR_VARIANT: 
+@ATK_TEXT_ATTR_STYLE: 
+@ATK_TEXT_ATTR_LAST_DEFINED: 
+
+<!-- ##### FUNCTION atk_text_get_text ##### -->
+<para>
+
+</para>
+
+@text: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_character_at_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_text_after_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@boundary_type: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_text_at_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@boundary_type: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_text_before_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@boundary_type: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_string_at_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@granularity: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_caret_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_character_extents ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@x: 
+@y: 
+@width: 
+@height: 
+@coords: 
+
+
+<!-- ##### FUNCTION atk_text_get_run_attributes ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_default_attributes ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_character_count ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_offset_at_point ##### -->
+<para>
+
+</para>
+
+@text: 
+@x: 
+@y: 
+@coords: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_bounded_ranges ##### -->
+<para>
+
+</para>
+
+@text: 
+@rect: 
+@coord_type: 
+@x_clip_type: 
+@y_clip_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_range_extents ##### -->
+<para>
+
+</para>
+
+@text: 
+@start_offset: 
+@end_offset: 
+@coord_type: 
+@rect: 
+
+
+<!-- ##### FUNCTION atk_text_free_ranges ##### -->
+<para>
+
+</para>
+
+@ranges: 
+
+
+<!-- ##### FUNCTION atk_text_get_n_selections ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_get_selection ##### -->
+<para>
+
+</para>
+
+@text: 
+@selection_num: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_add_selection ##### -->
+<para>
+
+</para>
+
+@text: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_remove_selection ##### -->
+<para>
+
+</para>
+
+@text: 
+@selection_num: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_set_selection ##### -->
+<para>
+
+</para>
+
+@text: 
+@selection_num: 
+@start_offset: 
+@end_offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_set_caret_offset ##### -->
+<para>
+
+</para>
+
+@text: 
+@offset: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_attribute_set_free ##### -->
+<para>
+
+</para>
+
+@attrib_set: 
+
+
+<!-- ##### FUNCTION atk_text_attribute_register ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_attribute_get_name ##### -->
+<para>
+
+</para>
+
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_attribute_for_name ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_text_attribute_get_value ##### -->
+<para>
+
+</para>
+
+@attr: 
+@index_: 
+@Returns: 
+
+

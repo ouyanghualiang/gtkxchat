@@ -1,0 +1,91 @@
+<!-- ##### SECTION Title ##### -->
+AtkWindow
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkWindow ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkWindow::activate ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::create ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::deactivate ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::destroy ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::maximize ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::minimize ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::move ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::resize ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+
+<!-- ##### SIGNAL AtkWindow::restore ##### -->
+<para>
+
+</para>
+
+@atkwindow: the object which received the signal.
+

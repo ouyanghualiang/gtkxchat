@@ -1,0 +1,6 @@
+gtk for android
+aqqw_ouyang
+一、解决问题：
+	1、Fatal signal 11 (SIGSEGV)，常称为随机错误，一般时内存操作错误，即linux编程下的 段错误（核心已转存）
+			解决思路：使用adb logcat 跟踪错误日志，可以看到错误信息输出，使用adb logcat | ndk-stack -sym <file lib.so> 可以定位到
+			发生错误的函数及行号，通过在对应文件处添加打印信息打印认为可能引起崩溃的元素来确定错误位置，以便修改

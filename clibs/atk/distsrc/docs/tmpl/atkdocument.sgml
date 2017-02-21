@@ -1,0 +1,147 @@
+<!-- ##### SECTION Title ##### -->
+AtkDocument
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkDocument ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkDocument::load-complete ##### -->
+<para>
+
+</para>
+
+@atkdocument: the object which received the signal.
+
+<!-- ##### SIGNAL AtkDocument::load-stopped ##### -->
+<para>
+
+</para>
+
+@atkdocument: the object which received the signal.
+
+<!-- ##### SIGNAL AtkDocument::page-changed ##### -->
+<para>
+
+</para>
+
+@atkdocument: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AtkDocument::reload ##### -->
+<para>
+
+</para>
+
+@atkdocument: the object which received the signal.
+
+<!-- ##### STRUCT AtkDocumentIface ##### -->
+<para>
+
+</para>
+
+@parent: 
+@get_document_type: 
+@get_document: 
+@get_document_locale: 
+@get_document_attributes: 
+@get_document_attribute_value: 
+@set_document_attribute: 
+@get_current_page_number: 
+@get_page_count: 
+
+<!-- ##### FUNCTION atk_document_get_document_type ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_document ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_attribute_value ##### -->
+<para>
+
+</para>
+
+@document: 
+@attribute_name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_set_attribute_value ##### -->
+<para>
+
+</para>
+
+@document: 
+@attribute_name: 
+@attribute_value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_attributes ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_locale ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_current_page_number ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_document_get_page_count ##### -->
+<para>
+
+</para>
+
+@document: 
+@Returns: 
+
+

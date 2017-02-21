@@ -1,0 +1,227 @@
+<!-- ##### SECTION Title ##### -->
+AtkComponent
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkComponent ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkComponent::bounds-changed ##### -->
+<para>
+
+</para>
+
+@atkcomponent: the object which received the signal.
+@arg1: 
+
+<!-- ##### STRUCT AtkComponentIface ##### -->
+<para>
+
+</para>
+
+@parent: 
+@add_focus_handler: 
+@contains: 
+@ref_accessible_at_point: 
+@get_extents: 
+@get_position: 
+@get_size: 
+@grab_focus: 
+@remove_focus_handler: 
+@set_extents: 
+@set_position: 
+@set_size: 
+@get_layer: 
+@get_mdi_zorder: 
+@bounds_changed: 
+@get_alpha: 
+
+<!-- ##### USER_FUNCTION AtkFocusHandler ##### -->
+<para>
+
+</para>
+
+@object: 
+@focus_in: 
+
+
+<!-- ##### STRUCT AtkRectangle ##### -->
+<para>
+
+</para>
+
+@x: 
+@y: 
+@width: 
+@height: 
+
+<!-- ##### FUNCTION atk_component_add_focus_handler ##### -->
+<para>
+
+</para>
+
+@component: 
+@handler: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_contains ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@coord_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_get_extents ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@width: 
+@height: 
+@coord_type: 
+
+
+<!-- ##### FUNCTION atk_component_get_layer ##### -->
+<para>
+
+</para>
+
+@component: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_get_mdi_zorder ##### -->
+<para>
+
+</para>
+
+@component: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_get_position ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@coord_type: 
+
+
+<!-- ##### FUNCTION atk_component_get_size ##### -->
+<para>
+
+</para>
+
+@component: 
+@width: 
+@height: 
+
+
+<!-- ##### FUNCTION atk_component_grab_focus ##### -->
+<para>
+
+</para>
+
+@component: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_ref_accessible_at_point ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@coord_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_remove_focus_handler ##### -->
+<para>
+
+</para>
+
+@component: 
+@handler_id: 
+
+
+<!-- ##### FUNCTION atk_component_set_extents ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@width: 
+@height: 
+@coord_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_set_position ##### -->
+<para>
+
+</para>
+
+@component: 
+@x: 
+@y: 
+@coord_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_set_size ##### -->
+<para>
+
+</para>
+
+@component: 
+@width: 
+@height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_component_get_alpha ##### -->
+<para>
+
+</para>
+
+@component: 
+@Returns: 
+
+

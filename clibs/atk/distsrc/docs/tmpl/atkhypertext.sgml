@@ -1,0 +1,65 @@
+<!-- ##### SECTION Title ##### -->
+AtkHypertext
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkHypertext ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkHypertext::link-selected ##### -->
+<para>
+
+</para>
+
+@atkhypertext: the object which received the signal.
+@arg1: 
+
+<!-- ##### FUNCTION atk_hypertext_get_link ##### -->
+<para>
+
+</para>
+
+@hypertext: 
+@link_index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hypertext_get_n_links ##### -->
+<para>
+
+</para>
+
+@hypertext: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hypertext_get_link_index ##### -->
+<para>
+
+</para>
+
+@hypertext: 
+@char_index: 
+@Returns: 
+
+

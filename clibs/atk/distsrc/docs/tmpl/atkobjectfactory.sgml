@@ -1,0 +1,55 @@
+<!-- ##### SECTION Title ##### -->
+AtkObjectFactory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkObjectFactory ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION atk_object_factory_create_accessible ##### -->
+<para>
+
+</para>
+
+@factory: 
+@obj: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_object_factory_get_accessible_type ##### -->
+<para>
+
+</para>
+
+@factory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_object_factory_invalidate ##### -->
+<para>
+
+</para>
+
+@factory: 
+
+

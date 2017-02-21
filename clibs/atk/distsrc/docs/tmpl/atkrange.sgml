@@ -1,0 +1,93 @@
+<!-- ##### SECTION Title ##### -->
+AtkRange
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ATK_TYPE_RANGE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION atk_range_copy ##### -->
+<para>
+
+</para>
+
+@src: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_range_free ##### -->
+<para>
+
+</para>
+
+@range: 
+
+
+<!-- ##### FUNCTION atk_range_get_lower_limit ##### -->
+<para>
+
+</para>
+
+@range: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_range_get_upper_limit ##### -->
+<para>
+
+</para>
+
+@range: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_range_get_description ##### -->
+<para>
+
+</para>
+
+@range: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_range_new ##### -->
+<para>
+
+</para>
+
+@lower_limit: 
+@upper_limit: 
+@description: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_range_get_type ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

@@ -1,0 +1,374 @@
+<!-- ##### SECTION Title ##### -->
+AtkTable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkTable ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkTable::column-deleted ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AtkTable::column-inserted ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AtkTable::column-reordered ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+
+<!-- ##### SIGNAL AtkTable::model-changed ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+
+<!-- ##### SIGNAL AtkTable::row-deleted ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AtkTable::row-inserted ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AtkTable::row-reordered ##### -->
+<para>
+
+</para>
+
+@atktable: the object which received the signal.
+
+<!-- ##### FUNCTION atk_table_ref_at ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_index_at ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_column_at_index ##### -->
+<para>
+
+</para>
+
+@table: 
+@index_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_row_at_index ##### -->
+<para>
+
+</para>
+
+@table: 
+@index_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_n_columns ##### -->
+<para>
+
+</para>
+
+@table: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_n_rows ##### -->
+<para>
+
+</para>
+
+@table: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_column_extent_at ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_row_extent_at ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_caption ##### -->
+<para>
+
+</para>
+
+@table: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_column_description ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_row_description ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_column_header ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_row_header ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_summary ##### -->
+<para>
+
+</para>
+
+@table: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_set_caption ##### -->
+<para>
+
+</para>
+
+@table: 
+@caption: 
+
+
+<!-- ##### FUNCTION atk_table_set_row_description ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@description: 
+
+
+<!-- ##### FUNCTION atk_table_set_column_description ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@description: 
+
+
+<!-- ##### FUNCTION atk_table_set_row_header ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@header: 
+
+
+<!-- ##### FUNCTION atk_table_set_column_header ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@header: 
+
+
+<!-- ##### FUNCTION atk_table_set_summary ##### -->
+<para>
+
+</para>
+
+@table: 
+@accessible: 
+
+
+<!-- ##### FUNCTION atk_table_get_selected_columns ##### -->
+<para>
+
+</para>
+
+@table: 
+@selected: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_get_selected_rows ##### -->
+<para>
+
+</para>
+
+@table: 
+@selected: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_is_column_selected ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_is_row_selected ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_is_selected ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_add_column_selection ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_add_row_selection ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_remove_column_selection ##### -->
+<para>
+
+</para>
+
+@table: 
+@column: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_table_remove_row_selection ##### -->
+<para>
+
+</para>
+
+@table: 
+@row: 
+@Returns: 
+
+

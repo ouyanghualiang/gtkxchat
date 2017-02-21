@@ -1,0 +1,37 @@
+<!-- ##### SECTION Title ##### -->
+AtkHyperlinkImpl
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkHyperlinkImpl ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION atk_hyperlink_impl_get_hyperlink ##### -->
+<para>
+
+</para>
+
+@impl: 
+@Returns: 
+
+

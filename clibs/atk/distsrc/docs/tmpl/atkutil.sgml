@@ -1,0 +1,266 @@
+<!-- ##### SECTION Title ##### -->
+AtkUtil
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkUtil ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AtkUtilClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+@add_global_event_listener: 
+@remove_global_event_listener: 
+@add_key_event_listener: 
+@remove_key_event_listener: 
+@get_root: 
+@get_toolkit_name: 
+@get_toolkit_version: 
+
+<!-- ##### ENUM AtkCoordType ##### -->
+<para>
+
+</para>
+
+@ATK_XY_SCREEN: 
+@ATK_XY_WINDOW: 
+
+<!-- ##### FUNCTION atk_add_focus_tracker ##### -->
+<para>
+
+</para>
+
+@focus_tracker: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_remove_focus_tracker ##### -->
+<para>
+
+</para>
+
+@tracker_id: 
+
+
+<!-- ##### FUNCTION atk_focus_tracker_init ##### -->
+<para>
+
+</para>
+
+@init: 
+
+
+<!-- ##### FUNCTION atk_focus_tracker_notify ##### -->
+<para>
+
+</para>
+
+@object: 
+
+
+<!-- ##### USER_FUNCTION AtkEventListener ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+
+<!-- ##### USER_FUNCTION AtkEventListenerInit ##### -->
+<para>
+
+</para>
+
+@void: 
+
+
+<!-- ##### FUNCTION atk_add_global_event_listener ##### -->
+<para>
+
+</para>
+
+@listener: 
+@event_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_remove_global_event_listener ##### -->
+<para>
+
+</para>
+
+@listener_id: 
+
+
+<!-- ##### STRUCT AtkKeyEventStruct ##### -->
+<para>
+
+</para>
+
+@type: 
+@state: 
+@keyval: 
+@length: 
+@string: 
+@keycode: 
+@timestamp: 
+
+<!-- ##### ENUM AtkKeyEventType ##### -->
+<para>
+
+</para>
+
+@ATK_KEY_EVENT_PRESS: 
+@ATK_KEY_EVENT_RELEASE: 
+@ATK_KEY_EVENT_LAST_DEFINED: 
+
+<!-- ##### USER_FUNCTION AtkKeySnoopFunc ##### -->
+<para>
+
+</para>
+
+@event: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_add_key_event_listener ##### -->
+<para>
+
+</para>
+
+@listener: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_remove_key_event_listener ##### -->
+<para>
+
+</para>
+
+@listener_id: 
+
+
+<!-- ##### FUNCTION atk_get_root ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_get_focus_object ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_get_toolkit_name ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_get_toolkit_version ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_get_version ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### MACRO ATK_DEFINE_TYPE ##### -->
+<para>
+
+</para>
+
+@TN: 
+@t_n: 
+@T_P: 
+
+
+<!-- ##### MACRO ATK_DEFINE_TYPE_EXTENDED ##### -->
+<para>
+
+</para>
+
+@TN: 
+@t_n: 
+@T_P: 
+@_f_: 
+@_C_: 
+
+
+<!-- ##### MACRO ATK_DEFINE_TYPE_WITH_CODE ##### -->
+<para>
+
+</para>
+
+@TN: 
+@t_n: 
+@T_P: 
+@_C_: 
+
+
+<!-- ##### MACRO ATK_DEFINE_ABSTRACT_TYPE ##### -->
+<para>
+
+</para>
+
+@TN: 
+@t_n: 
+@T_P: 
+
+
+<!-- ##### MACRO ATK_DEFINE_ABSTRACT_TYPE_WITH_CODE ##### -->
+<para>
+
+</para>
+
+@TN: 
+@t_n: 
+@T_P: 
+@_C_: 
+
+

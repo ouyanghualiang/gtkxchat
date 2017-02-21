@@ -1,0 +1,136 @@
+<!-- ##### SECTION Title ##### -->
+AtkHyperlink
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkHyperlink ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkHyperlink::link-activated ##### -->
+<para>
+
+</para>
+
+@atkhyperlink: the object which received the signal.
+
+<!-- ##### ARG AtkHyperlink:end-index ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtkHyperlink:number-of-anchors ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtkHyperlink:selected-link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtkHyperlink:start-index ##### -->
+<para>
+
+</para>
+
+<!-- ##### ENUM AtkHyperlinkStateFlags ##### -->
+<para>
+
+</para>
+
+@ATK_HYPERLINK_IS_INLINE: 
+
+<!-- ##### FUNCTION atk_hyperlink_get_uri ##### -->
+<para>
+
+</para>
+
+@link_: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_get_object ##### -->
+<para>
+
+</para>
+
+@link_: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_get_end_index ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_get_start_index ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_is_valid ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_is_inline ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_get_n_anchors ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_hyperlink_is_selected_link ##### -->
+<para>
+
+</para>
+
+@link_: 
+@Returns: 
+
+

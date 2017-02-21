@@ -1,0 +1,102 @@
+<!-- ##### SECTION Title ##### -->
+AtkSelection
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkSelection ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkSelection::selection-changed ##### -->
+<para>
+
+</para>
+
+@atkselection: the object which received the signal.
+
+<!-- ##### FUNCTION atk_selection_add_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_clear_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_ref_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_get_selection_count ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_is_child_selected ##### -->
+<para>
+
+</para>
+
+@selection: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_remove_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_selection_select_all_selection ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+

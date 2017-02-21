@@ -1,0 +1,34 @@
+libfontconfig_la_SOURCES = fcarch.h                                \
+                           fcatomic.c                              \
+                           fcatomic.h                              \
+                           fcblanks.c                              \
+                           fccache.c                               \
+                           fccfg.c                                 \
+                           fccharset.c                             \
+                           fccompat.c                              \
+                           fcdbg.c                                 \
+                           fcdefault.c                             \
+                           fcdir.c                                 \
+                           fcformat.c                              \
+                           fcfreetype.c                            \
+                           fcfs.c                                  \
+                           fchash.c                                \
+                           fcinit.c                                \
+                           fclang.c                                \
+                           fclist.c                                \
+                           fcmatch.c                               \
+                           fcmatrix.c                              \
+                           fcmutex.h                               \
+                           fcname.c                                \
+                           fcobjs.c                                \
+                           fcobjs.h                                \
+                           fcobjshash.h                            \
+                           fcpat.c                                 \
+                           fcserialize.c                           \
+                           fcstat.c                                \
+                           fcstr.c                                 \
+                           fcwindows.h                             \
+                           fcxml.c                                 \
+                           ftglue.h                                \
+                           ftglue.c                                
+

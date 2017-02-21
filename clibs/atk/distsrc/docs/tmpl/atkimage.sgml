@@ -1,0 +1,77 @@
+<!-- ##### SECTION Title ##### -->
+AtkImage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkImage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION atk_image_get_image_position ##### -->
+<para>
+
+</para>
+
+@image: 
+@x: 
+@y: 
+@coord_type: 
+
+
+<!-- ##### FUNCTION atk_image_get_image_description ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_image_set_image_description ##### -->
+<para>
+
+</para>
+
+@image: 
+@description: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_image_get_image_size ##### -->
+<para>
+
+</para>
+
+@image: 
+@width: 
+@height: 
+
+
+<!-- ##### FUNCTION atk_image_get_image_locale ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+

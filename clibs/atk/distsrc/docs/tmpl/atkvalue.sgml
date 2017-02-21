@@ -1,0 +1,129 @@
+<!-- ##### SECTION Title ##### -->
+AtkValue
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AtkValue ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AtkValue::value-changed ##### -->
+<para>
+
+</para>
+
+@atkvalue: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### FUNCTION atk_value_get_current_value ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+
+
+<!-- ##### FUNCTION atk_value_get_maximum_value ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+
+
+<!-- ##### FUNCTION atk_value_get_minimum_value ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+
+
+<!-- ##### FUNCTION atk_value_set_current_value ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_value_get_minimum_increment ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+
+
+<!-- ##### FUNCTION atk_value_get_value_and_text ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+@text: 
+
+
+<!-- ##### FUNCTION atk_value_get_range ##### -->
+<para>
+
+</para>
+
+@obj: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_value_get_increment ##### -->
+<para>
+
+</para>
+
+@obj: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_value_get_sub_ranges ##### -->
+<para>
+
+</para>
+
+@obj: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atk_value_set_value ##### -->
+<para>
+
+</para>
+
+@obj: 
+@new_value: 
+
+

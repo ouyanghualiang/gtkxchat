@@ -1,0 +1,5 @@
+#ifndef __ROBOT_MAIN_H__
+#define __ROBOT_MAIN_H__
+
+int main(void);
+#endif

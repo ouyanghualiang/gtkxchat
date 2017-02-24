@@ -137,7 +137,7 @@ int tcp_conect(char *url,int port)
     SA_IN server_addr;
     int sockfd;
 	__android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
-    sockfd=socket(AF_INET,SOCK_STREAM,0);
+    sockfd=Socket(AF_INET,SOCK_STREAM,0);
     if(sockfd == -1)
     {
     	__android_log_print(10,"ouyang","-----%s---%d---the socket error-----",__FILE__,__LINE__);

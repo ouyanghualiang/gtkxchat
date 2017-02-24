@@ -55,7 +55,8 @@ obj/local/armeabi/objs-debug/gtka_test/Provider.o: jni/Provider.c \
  /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/input.h \
  /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/keycodes.h \
  /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/native_window.h \
- /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/rect.h
+ /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/rect.h \
+ jni/log_print.h
 
 jni/Provider.h:
 
@@ -170,3 +171,5 @@ jni/Provider.h:
 /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/native_window.h:
 
 /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/android/rect.h:
+
+jni/log_print.h:

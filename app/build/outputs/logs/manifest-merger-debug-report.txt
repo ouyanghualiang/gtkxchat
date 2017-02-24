@@ -22,6 +22,10 @@ ADDED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml:6:5-44
 		ADDED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml:6:15-41
 		INJECTED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml
 		INJECTED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml:7:2-63
+	android:name
+		ADDED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml:7:19-61
 application
 ADDED from /home/ouyang/oyhl/rebotgtkandroid/app/AndroidManifest.xml:9:5-42:19
 	android:hasCode

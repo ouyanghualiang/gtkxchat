@@ -18,8 +18,10 @@
 #include <android_native_app_glue.h>
 #include <android/log.h>
 #include <gtkandroid.h>
-
-
+#include <pthread.h>//线程
+#include <unistd.h>
+#include <robot_main.h>
+#include <log_print.h>
 //#include <hexchat.h>
 
 
@@ -87,6 +89,8 @@ char *geTime = NULL;
 jclass myClass;
 extern JNIEnv* jniEnv;
 
+
+
 static void
 servlist_sort (GtkWidget *button, gpointer none)
 {
@@ -97,7 +101,10 @@ servlist_sort (GtkWidget *button, gpointer none)
 static void
 servlist_edit_cb (GtkWidget *but, gpointer none)
 {
-	__android_log_print(10,"ouyang","---EDIT--%s---%d-----",__FILE__,__LINE__);
+	__android_log_print(10,"ouyang","---EDIT--------------------------------%s---%d-----------------------------------------------------------------------",__FILE__,__LINE__);
+	pthread_t thread_1,thread_2;
+	//pthread_create(&thread_1,NULL,main,NULL);
+	main();
 	//GetTime();
 	/*if (!servlist_has_selection (GTK_TREE_VIEW (networks_tree)))
 		return;
@@ -190,8 +197,7 @@ static void
 servlist_addnet_cb (GtkWidget *item, GtkTreeView *treeview)
 {
 	
-	__android_log_print(10,"ouyang","-----------------------------------------------------------------------\----------------------------------------------------------------------------------------------------------\----------------------------------------------------------------------------------------------------------\-------------------------------------------------%s---%d-----",__FILE__,__LINE__);
-	main();
+	__android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
 	/*GtkTreeIter iter;
 	GtkListStore *store;
 	ircnet *net;
@@ -278,6 +284,8 @@ bold_label (char *text)
 	return label;
 }
 
+
+
 void android_main(struct android_app *state)
 {
     GtkWidget *servlist;
@@ -321,35 +329,46 @@ void android_main(struct android_app *state)
     	__android_log_print(10,"ouyang","-----%s---%d---%s-----",__FILE__,__LINE__,"getEnv is error,exit!!!");
     	exit(0);
     }*/
-    
-    JNIEnv* env =NULL;//= app->activity->env;
-	jniEnv = state->activity->env;
-	if(!env)
-	{
-		__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"jniEnv is NULL");
-	}
-	jobject activityInstance = state->activity->clazz;
-	JavaVM* jvm =state->activity->vm;
-	//jint envInt = (*jvm)->GetEnv(jvm, (void **) &env, JNI_VERSION_1_6);
-	if ( (*jvm)->GetEnv(jvm, (void **)&env, JNI_VERSION_1_6) < 0 )
-        (*jvm)->AttachCurrentThread(jvm, &env, NULL);
-	//__android_log_print(10,"ouyang","-----%s---%d---%d--------",__FILE__,__LINE__,envInt);
-	if(env == NULL/*envInt != JNI_OK*/)
-	{
-		__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"jniEnv is NULL");
-		return -1;
-	}
-	/*if ((*jvm)->AttachCurrentThread(jvm, &env, NULL) < 0)
+    __android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
+    //getWebPicture(state);
+    /*
+    struct android_app *app = state;
+    jobject activityInstance = app->activity->clazz;
+    JavaVM* jvm = app->activity->vm;
+    JNIEnv *env = NULL;
+
+    (*jvm)->GetEnv(jvm, (void **) &env, JNI_VERSION_1_6);
+
+    if ((*jvm)->AttachCurrentThread(jvm, &env, NULL) < 0)
     {
-    	__android_log_print(10,"ouyang","-----%s---%d---callback_handler: failed to attach current thread--------",__FILE__,__LINE__);
-    	//LOGE("callback_handler: failed to attach current thread");
-    	return -1;
-    }*/
-	jniEnv = env;
+     LOGE("callback_handler: failed to attach current thread");
+     return;
+    }
+
+    jclass clazz = (*env)->GetObjectClass(env, activityInstance);
+    if (!clazz) {
+    LOGE("callback_handler: failed to get WebPicCls class reference");
+
+    (*jvm)->DetachCurrentThread(app->activity->vm);
+    return;
+    }
+
+    jmethodID methodID = (*env)->GetMethodID(env, clazz, "LoadWebSite", "(Ljava/lang/String;)V");
+    if (!methodID) {
+    LOGE("callback_handler: failed to get LoadWebSite method ID");
+    (*jvm)->DetachCurrentThread(app->activity->vm);
+    return;
+    }
+
+    jstring url= (*env)->NewStringUTF(env, "http://198.168.1.104");
+
+    (*env)->CallVoidMethod(env, activityInstance, methodID, url);
+
+    (*env)->ReleaseStringUTFChars(env,url,(*env)->GetStringUTFChars(env, url, 0));
+
+    (*jvm)->DetachCurrentThread(jvm);
     
-    
-    myClass = (*jniEnv)->FindClass(jniEnv,"org/p2lang/gtkandroid/DummyActivity");
-	__android_log_print(10,"ouyang","-----%s---%d---%d-----",__FILE__,__LINE__,sizeof(state->activity));
+    */
     
 	__android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
 

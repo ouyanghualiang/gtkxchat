@@ -1,9 +1,11 @@
 #include "mysock.h"
 #include <signal.h>
 #include <android/log.h>
-#define IRC "192.168.0.62"
+#include <gtkandroid.h>
+
+#define IRC "192.168.0.48"
 #define PORT 6667
-#define USER "USER welcombot welcombot 192.168.0.62 :welcombot\r\n"
+#define USER "USER welcombot welcombot 192.168.0.48 :welcombot\r\n"
 #define NICK "NICK robot\r\n"
 #define INIT "MSG nickserv identify 123456\r\n"
 #define JOIN "JOIN #uesoft\r\n"
@@ -106,7 +108,7 @@ int main(void)
         }
 		if(strstr(buf,"PRIVMSG #uesoft"))
 		{
-			geTime = buf;
+			strcpy(geTime,buf);
 		}
         free(buf);
     }

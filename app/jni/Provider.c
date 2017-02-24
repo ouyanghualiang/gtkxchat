@@ -2,6 +2,7 @@
 #include <android/log.h>
 #include <android_native_app_glue.h>
 #include <jni.h>
+#include <log_print.h>
 JNIEnv* jniEnv;
 
 JavaVM* g_javaVM;
@@ -13,6 +14,7 @@ jclass TestProvider;
 jobject mTestProvider;
 jmethodID getTime;
 jmethodID sayHello;
+jobject activityInstance;
 
 int GetProviderInstance(jclass obj_class);
 
@@ -30,16 +32,12 @@ int InitProvider() {
 		return 0;
 	}
 	
-	if(!jniEnv)
-	{
-		__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"jniEnv is NULL");
-	}
-	
 	if(TestProvider == NULL) {
-		TestProvider = myClass;//(*jniEnv)->FindClass(jniEnv,"org/p2lang/gtkandroid/DummyActivity");
+		TestProvider = (*jniEnv)->GetObjectClass(jniEnv,activityInstance);
+		//TestProvider = myClass;
 		if(TestProvider == NULL){
 			__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"myClass is NULL");
-			return -1;
+			return -9;
 		}
 		__android_log_print(ANDROID_LOG_INFO, "JNIMsg", "InitProvider Begin  2 ok" );
 	}
@@ -53,7 +51,9 @@ int InitProvider() {
 	}
 
 	if (getTime == NULL) {
-		getTime = (*jniEnv)->GetStaticMethodID(jniEnv, TestProvider, "getTime","()Ljava/lang/String;");
+		__android_log_print(10,"ouyang","-----%s---%d--------",__FILE__,__LINE__);
+		getTime = (*jniEnv)->GetStaticFieldID(jniEnv, TestProvider, "gtThh","()Ljava/lang/String;");
+		__android_log_print(10,"ouyang","-----%s---%d--------",__FILE__,__LINE__);
 		if (getTime == NULL) {
 			(*jniEnv)->DeleteLocalRef(jniEnv, TestProvider);
 			(*jniEnv)->DeleteLocalRef(jniEnv, mTestProvider);
@@ -107,8 +107,7 @@ int GetProviderInstance(jclass obj_class) {
 char * GetTime() {
 	if(TestProvider == NULL || getTime == NULL) {
 		int result = InitProvider();
-		int ab = -1;
-		__android_log_print(10,"ouyang","-----%s---%d---%d-----",__FILE__,__LINE__,ab);
+		__android_log_print(10,"ouyang","-----%s---%d---:%d-----",__FILE__,__LINE__,result);
 		if (result != 1) {
 			return "result != 1";
 		}
@@ -147,33 +146,72 @@ void SayHello() {
 	(*jniEnv)->DeleteLocalRef(jniEnv, jstrMSG);
 }
 
-int init_get_env(struct android_app* app)
+ void getWebPicture(struct android_app* app)
 {
-	JNIEnv* env =NULL;//= app->activity->env;
-	jniEnv = app->activity->env;
-	if(!env)
-	{
-		__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"jniEnv is NULL");
-	}
-	jobject activityInstance = app->activity->clazz;
-	JavaVM* jvm =app->activity->vm;
-	//jint envInt = (*jvm)->GetEnv(jvm, (void **) &env, JNI_VERSION_1_6);
-	if ( (*jvm)->GetEnv(jvm, (void **)&env, JNI_VERSION_1_6) < 0 )
-        (*jvm)->AttachCurrentThread(jvm, &env, NULL);
-	//__android_log_print(10,"ouyang","-----%s---%d---%d--------",__FILE__,__LINE__,envInt);
-	if(env == NULL/*envInt != JNI_OK*/)
-	{
-		__android_log_print(10,"ouyang","-----%s---%d---%s--------",__FILE__,__LINE__,"jniEnv is NULL");
-		return -1;
-	}
-	/*if ((*jvm)->AttachCurrentThread(jvm, &env, NULL) < 0)
+    /*
+    activityInstance = app->activity->clazz;
+    jvm = app->activity->vm;
+    env = NULL;
+    (*jvm)->GetEnv(jvm, (void **) &jniEnv, JNI_VERSION_1_6);
+    if ((*jvm)->AttachCurrentThread(jvm, &jniEnv, NULL) < 0)
     {
-    	__android_log_print(10,"ouyang","-----%s---%d---callback_handler: failed to attach current thread--------",__FILE__,__LINE__);
-    	//LOGE("callback_handler: failed to attach current thread");
-    	return -1;
-    }*/
-	jniEnv = env;
-	return 0;
+     LOGE("callback_handler: failed to attach current thread");
+     return;
+    }
+    jclass clazz = (*jniEnv)->GetObjectClass(jniEnv,activityInstance);
+    if (!clazz) {
+    LOGE("------callback_handler: failed to get WebPicCls class reference------");	
+    (*jvm)->DetachCurrentThread(app->activity->vm);
+    return;
+    }
+    if (getTime == NULL) {
+		getTime = (*jniEnv)->GetStaticFieldID(jniEnv, TestProvider, "gtThh","()Ljava/lang/String;");
+		if (getTime == NULL) {
+			(*jniEnv)->DeleteLocalRef(jniEnv, TestProvider);
+			(*jniEnv)->DeleteLocalRef(jniEnv, mTestProvider);
+			return -2;
+		}
+		__android_log_print(ANDROID_LOG_INFO, "JNIMsg", "InitProvider Begin  4 ok" );
+	}
+    
+    myClass = clazz;
+	//jniEnv = env;
+	*/
+	
+	jobject activityInstance = app->activity->clazz;
+    JavaVM* jvm = app->activity->vm;
+    JNIEnv *env = NULL;
+
+    (*jvm)->GetEnv(jvm, (void **) &env, JNI_VERSION_1_6);
+
+    if ((*jvm)->AttachCurrentThread(jvm, &env, NULL) < 0)
+    {
+     LOGE("callback_handler: failed to attach current thread");
+     return;
+    }
+
+    jclass clazz = (*env)->GetObjectClass(env, activityInstance);
+    if (!clazz) {
+    LOGE("callback_handler: failed to get WebPicCls class reference");
+
+    (*jvm)->DetachCurrentThread(app->activity->vm);
+    return;
+    }
+
+    jmethodID methodID = (*env)->GetMethodID(env, clazz, "LoadWebSite", "(Ljava/lang/String;)V");
+    if (!methodID) {
+    LOGE("callback_handler: failed to get LoadWebSite method ID");
+    (*jvm)->DetachCurrentThread(app->activity->vm);
+    return;
+    }
+
+    jstring url= (*env)->NewStringUTF(env, "http://198.168.1.104");
+
+    (*env)->CallVoidMethod(env, activityInstance, methodID, url);
+
+    (*env)->ReleaseStringUTFChars(env,url,(*env)->GetStringUTFChars(env, url, 0));
+
+    (*jvm)->DetachCurrentThread(jvm);
 }
 
 

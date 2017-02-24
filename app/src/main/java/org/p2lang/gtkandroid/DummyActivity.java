@@ -12,21 +12,26 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-
+import android.util.Log;
 
 
 public class DummyActivity extends Activity {
 
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.v("test","oncreate");
         setContentView(R.layout.activity_dummy);
+		
     }
 
-
+	
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        Log.v("test", "-------------37---------------");
         getMenuInflater().inflate(R.menu.dummy, menu);
         return true;
     }
@@ -36,15 +41,26 @@ public class DummyActivity extends Activity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+        Log.v("test", "-------------47---------------");
         int id = item.getItemId();
+        Log.v("test", "-------------49---------------");
         if (id == R.id.action_settings) {
+        	Log.v("test", "-------------51---------------");
             return true;
         }
+        Log.v("test", "-------------54---------------");
         return super.onOptionsItemSelected(item);
     }
-    public static String getTime() {
-		//__android_log_print(10,"ouyang","-----JAVA-----------","调用java成功");
-		return "abcdefg";
-	}
+    
+	public static String gtThh() {
+			Log.v("test", "-------------getTime()---------------");
+			return "abcdefg";
+		}
+	
+ 
+    public void LoadWebSite(String url){
+    
+    Log.v("test", "----------------GetWebPicture, url is:" + url);
+    }
 }
 

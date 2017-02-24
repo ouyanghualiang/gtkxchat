@@ -641,7 +641,8 @@ obj/local/armeabi/objs-debug/gtka_test/main.o: jni/main.c \
  /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvpaned.h \
  /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvscale.h \
  /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvscrollbar.h \
- /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvseparator.h
+ /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvseparator.h \
+ jni/robot_main.h jni/log_print.h
 
 /opt/android-ndk-r10e/platforms/android-15/arch-arm/usr/include/jni.h:
 
@@ -1928,3 +1929,7 @@ jni/Provider.h:
 /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvscrollbar.h:
 
 /home/ouyang/oyhl/rebotgtkandroid/clibs/gtk/../gtk/distsrc/gtk/deprecated/gtkvseparator.h:
+
+jni/robot_main.h:
+
+jni/log_print.h:

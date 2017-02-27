@@ -1,3 +1,0 @@
-[Test]
-Exec=@pkglibexecdir@/installed-tests/css/api
-Type=session

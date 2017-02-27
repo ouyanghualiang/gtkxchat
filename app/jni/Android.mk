@@ -30,5 +30,5 @@ LOCAL_SRC_FILES := main.c\
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/common $(LOCAL_PATH)/fe-gtk $(LOCAL_PATH) $(LOCAL_PATH)/dirent $(LOCAL_PATH)/fe-text $(LOCAL_PATH)/htm $(LOCAL_PATH)/libenchant_win8 system/core/include/cutils
 LOCAL_SHARED_LIBRARIES := libcutil
 
-include $(LOCAL_PATH)/../../clibs/gtk/build-gtk-shared-library.mk
+include $(LOCAL_PATH)/../../../clibs/gtk/build-gtk-shared-library.mk
 

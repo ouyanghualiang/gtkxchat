@@ -1,4 +1,0 @@
-[Test]
-Exec=/bin/sh -c "@pkglibexecdir@/installed-tests/tree-relationships"
-Type=session
-

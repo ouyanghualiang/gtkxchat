@@ -88,7 +88,8 @@ static GtkWidget *edit_trees[N_TREES];
 char *geTime = NULL;
 jclass myClass;
 extern JNIEnv* jniEnv;
-
+jclass m_class;
+jobject m_object;
 
 
 static void
@@ -346,6 +347,8 @@ void android_main(struct android_app *state)
     }
 
     jclass clazz = (*env)->GetObjectClass(env, activityInstance);
+    m_class = (jclass)(*env)->NewGlobalRef(env,clazz); //将类型信息存储到m_class中  
+    m_object = (jobject)(*env)->NewGlobalRef(env,activityInstance); // 将对象信息存储到m_object中
     if (!clazz) {
     LOGE("callback_handler: failed to get WebPicCls class reference");
 
@@ -353,10 +356,11 @@ void android_main(struct android_app *state)
     return;
     }
 
-    jmethodID methodID = (*env)->GetMethodID(env, clazz, "LoadWebSite", "(Ljava/lang/String;)V");
+    jmethodID methodID = (*env)->GetMethodID(env, m_class, "openInputMethod", "(Landroid/widget/EditText;)V");
     if (!methodID) {
     LOGE("callback_handler: failed to get LoadWebSite method ID");
     (*jvm)->DetachCurrentThread(app->activity->vm);
+    __android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
     return;
     }
 
@@ -369,7 +373,6 @@ void android_main(struct android_app *state)
     (*jvm)->DetachCurrentThread(jvm);
     
     */
-    
 	__android_log_print(10,"ouyang","-----%s---%d-----",__FILE__,__LINE__);
 
     servlist = gtk_window_new (GTK_WINDOW_TOPLEVEL);

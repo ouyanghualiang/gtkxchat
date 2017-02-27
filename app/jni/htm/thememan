@@ -1,3 +1,0 @@
-#!/bin/sh
-exec_prefix="/usr/local"
-exec mono "${exec_prefix}/bin/thememan.exe" "$@"

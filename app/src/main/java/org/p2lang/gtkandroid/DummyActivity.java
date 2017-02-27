@@ -52,15 +52,67 @@ public class DummyActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     
-	public static String gtThh() {
-			Log.v("test", "-------------getTime()---------------");
-			return "abcdefg";
-		}
 	
- 
-    public void LoadWebSite(String url){
-    
-    Log.v("test", "----------------GetWebPicture, url is:" + url);
-    }
+	/**
+
+	 * 
+
+	 * @MethodName:closeInputMethod
+
+	 * @Description:关闭系统软键盘
+
+	 * @throws
+
+	 */
+
+	public void closeInputMethod(){
+
+	try {
+
+	((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE))
+
+	.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+
+	InputMethodManager.HIDE_NOT_ALWAYS);
+
+	} catch (Exception e) { }finally{ }
+
+	}
+
+	/**
+
+	 * 
+
+	 * @MethodName:openInputMethod
+
+	 * @Description:打开系统软键盘
+
+	 * @throws
+
+	 */
+
+	public void openInputMethod(final EditText editText){
+
+	Timer timer = new Timer();
+
+	timer.schedule(new TimerTask() {
+
+	public void run() {
+
+	InputMethodManager inputManager = (InputMethodManager) editText
+
+	.getContext().getSystemService(
+
+	Context.INPUT_METHOD_SERVICE);
+
+	inputManager.showSoftInput(editText, 0);
+
+	}
+
+	}, 200);
+
+	}
+	
+	
 }
 
